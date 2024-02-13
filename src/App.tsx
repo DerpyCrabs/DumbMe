@@ -115,8 +115,8 @@ export default function App() {
       <h1 className='font-bold text-3xl'>Dumb me!</h1>
       <h2 className='text-xl text-gray-700 font-bold'>Dumbbell weight set combinator</h2>
 
-      <div className='flex gap-4 flex-wrap'>
-        <div className='basis-80 bg-gray-200 p-4 flex flex-col gap-2 rounded-md'>
+      <div className='flex gap-4 flex-wrap max-w-[55rem]'>
+        <div className='basis-80 flex-grow bg-gray-200 p-4 flex flex-col gap-2 rounded-md'>
           <h3 className='font-semibold text-gray-700 text-md'>I have</h3>
           <ul className='flex flex-col gap-1'>
             {state.plateSets.map((ps, i) => (
@@ -177,7 +177,7 @@ export default function App() {
             </li>
           </ul>
         </div>
-        <div className='basis-100 bg-gray-200 p-4 flex flex-col gap-4 rounded-md'>
+        <div className='basis-100 flex-grow bg-gray-200 p-4 flex flex-col gap-4 rounded-md'>
           <div className='flex flex-col gap-2'>
             <h3 className='font-semibold text-gray-700 text-md'>I want</h3>
             <div>
