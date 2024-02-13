@@ -209,7 +209,7 @@ export default function App() {
               />
               <span className='pl-1'>kg</span>
               <br />
-              and weight of a single dumbbell is{' '}
+              Weight of a single dumbbell is{' '}
               <input
                 type='number'
                 defaultValue={currentTask.dumbbellWeight || 2}
