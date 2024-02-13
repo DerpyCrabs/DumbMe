@@ -200,7 +200,7 @@ export default function App() {
                 pattern='[0-9]+([\.,][0-9]+)?'
                 step='0.05'
                 className={`min-w-0 w-20 x-1 rounded border-2 ${
-                  currentTask.expectedWeight && !Number.isNaN(currentTask.expectedWeight) ? '' : 'border-blue-300'
+                  currentTask.expectedWeight && !Number.isNaN(currentTask.expectedWeight) ? '' : 'border-red-300'
                 }`}
                 onChange={(e) =>
                   setCurrentTask((ct) => ({
