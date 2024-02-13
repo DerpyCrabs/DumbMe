@@ -119,7 +119,7 @@ export default function App() {
 
       <div className='flex gap-4 flex-wrap'>
         <div className='basis-80 bg-gray-200 p-4 flex flex-col gap-2 rounded-md'>
-          <h3 className='font-semibold text-gray-700 text-md'>Available plates</h3>
+          <h3 className='font-semibold text-gray-700 text-md'>I have</h3>
           <ul className='flex flex-col gap-1'>
             {state.plateSets.map((ps, i) => (
               <li key={i}>
@@ -239,7 +239,7 @@ export default function App() {
                       <li key={i}>
                         {i + 1}){' '}
                         {c.sets.map((ps, i) => (
-                          <span>
+                          <span key={i}>
                             {ps.count} x {ps.weight}
                             <span className='text-gray-800 text-sm'>kg</span>
                             {i !== c.sets.length - 1 && <span className='px-1'>+</span>}
