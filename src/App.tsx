@@ -86,7 +86,7 @@ function findCombinations(plateSets: PlateSet[], task: Task): { combinations: Pl
             (ec) =>
               ec.sets.length === c.sets.length &&
               ec.sets.every((s1, i) => s1.weight === c.sets[i].weight && s1.count === c.sets[i].count)
-          )
+          ) || c.sets.length === 0
             ? acc
             : [...acc, c],
         [] as PlateSetCombination[]
