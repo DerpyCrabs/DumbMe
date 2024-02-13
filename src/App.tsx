@@ -37,8 +37,6 @@ const saveableStateAtom = atomWithStorage<SaveableState>('state', {
   ],
 })
 
-const aLittleMore = 1
-
 type PlateSetCombination = { sets: PlateSet[]; totalWeight: number }
 
 function findCombinations(plateSets: PlateSet[], task: Task): { combinations: PlateSetCombination[] } | null {
@@ -57,7 +55,7 @@ function findCombinations(plateSets: PlateSet[], task: Task): { combinations: Pl
     const addPlateSet = (ps: PlateSet, combinations: PlateSetCombination[]): PlateSetCombination[] => {
       return combinations.flatMap((c) => {
         const weight = c.totalWeight + ps.weight * ps.count
-        if (weight > task.expectedWeight + aLittleMore) {
+        if (weight > task.expectedWeight * 1.2) {
           return [c]
         }
         const existingSet = c.sets.find((s) => s.weight === ps.weight)
