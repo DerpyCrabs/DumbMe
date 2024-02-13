@@ -202,7 +202,6 @@ export default function App() {
                 className={`min-w-0 w-20 x-1 rounded border-2 ${
                   currentTask.expectedWeight && !Number.isNaN(currentTask.expectedWeight) ? '' : 'border-blue-300'
                 }`}
-                autoFocus
                 onChange={(e) =>
                   setCurrentTask((ct) => ({
                     ...ct,
