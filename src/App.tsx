@@ -200,6 +200,7 @@ export default function App() {
                 pattern='[0-9]+([\.,][0-9]+)?'
                 step='0.05'
                 className='min-w-0 w-20 x-1 rounded'
+                autoFocus
                 onChange={(e) =>
                   setCurrentTask((ct) => ({
                     ...ct,
