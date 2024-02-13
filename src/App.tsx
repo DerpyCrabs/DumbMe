@@ -194,7 +194,7 @@ export default function App() {
                   </option>
                 ))}
               </select>{' '}
-              dumbbells with weight equal or a little more than{' '}
+              {currentTask.numberOfDumbbells === 1 ? 'dumbbell' : 'dumbbells'} with weight equal or a little more than{' '}
               <input
                 type='number'
                 pattern='[0-9]+([\.,][0-9]+)?'
